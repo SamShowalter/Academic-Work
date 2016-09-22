@@ -155,7 +155,12 @@ label variable earnweek "Weekly Earnings"
 
 
 *Display functions to add tables into final paper (sorry for long codeline)
-esttab, se varwidth(25) label nomtitles nobaselevels r2 ar2 nogaps rename(2.diffany Disabled 71.educ Grade_12 73.educ HSDiploma 81.educ Some_College 92.educ Associates_Degree 111.educ Bachelors_Degree 123.educ Masters_Degree 124.educ Professional_Degree 125.educ Doctorate_Degree)title(OLS and PWLS Volunteerism Regressions) drop(81.educ 92.educ 111.educ 123.educ 124.educ 125.educ 2010.year 2011.year 2012.year 2013.year 12.region 33.region 21.region 22.region 31.region 32.region 33.region 41.region 42.region) order(educyears 20.educ ElementaryS_Attainment 30.educ MiddleS_Attainment 40.educ 50.educ 60.educ Grade_12 HSDiploma Some_College 81.educ 92.educ 111.educ 123.educ 124.educ 125.educ Associates_Degree Bachelors_Degree Masters_Degree Professional_Degree Doctorate_Degree) addnotes(Four year dummies and eight region dummies included in regression, but omitted.) 
+esttab, se varwidth(25) label nomtitles nobaselevels r2 ar2 nogaps///
+rename(2.diffany Disabled 71.educ Grade_12 73.educ HSDiploma 81.educ Some_College 92.educ Associates_Degree 111.educ Bachelors_Degree 123.educ Masters_Degree 124.educ Professional_Degree 125.educ Doctorate_Degree)///
+title(OLS and PWLS Volunteerism Regressions)///
+drop(81.educ 92.educ 111.educ 123.educ 124.educ 125.educ 2010.year 2011.year 2012.year 2013.year 12.region 33.region 21.region 22.region 31.region 32.region 33.region 41.region 42.region)///
+order(educyears 20.educ ElementaryS_Attainment 30.educ MiddleS_Attainment 40.educ 50.educ 60.educ Grade_12 HSDiploma Some_College 81.educ 92.educ 111.educ 123.educ 124.educ 125.educ Associates_Degree Bachelors_Degree Masters_Degree Professional_Degree Doctorate_Degree)///
+addnotes(Four year dummies and eight region dummies included in regression, but omitted.) 
 
 
 
